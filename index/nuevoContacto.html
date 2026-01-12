@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Contacto</title>
+    <link rel="stylesheet" href="../Styles/nuevoContacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="contenedor3">
+            <h1 class="nuevo">Nuevo Contacto</h1>
+        </div>
+
+        <div class="iconosNavBar">
+            <a href="../index/perfilUsuario.html">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+            <a href="../index/contactosFavoritos.html">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+
+            <a href="../index/contactos.html">
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </div>
+    </nav>
+    <form>
+        <div>
+            <h2 clas="contactoNuevo"></h2>
+            <label class="info">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Ingrese el nombre"></input>
+        </div>
+        <div>
+            <label class="info">Apellido:</label>
+            <input type="text" name="apellido" placeholder="Ingrese el apellido"></input>
+        </div>
+        <div>
+            <label class="info">Numero de Teléfono:</label>
+            <input type="text" name="telefono" placeholder="Ingrese el telefono"></input>
+        </div>
+        <div>
+            <label class="info">Direción:</label>
+            <input type="text" name="direccion" placeholder="Ingrese su Dirección"></input>
+        </div>
+
+        <button type="submit" class="btnGuardar">Agregar Contacto</button>
+    </form>
+</body>
+</html>
