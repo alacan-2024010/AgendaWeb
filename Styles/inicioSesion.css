@@ -7,7 +7,10 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    background-image: url("../img/FondoInicio.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,61 +45,213 @@ body {
     transform: scale(1.05);
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.4em;
+    background-color: rgba(23, 23, 23, 0.65);
+    border-radius: 25px;
+    transition: 0.4s ease-in-out;
+}
+
 .contenedor1 {
-    background-color: #ffffff;
-    width: 350px;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(
+        163deg,
+        rgba(29, 201, 228, 0.6) 30%,
+        rgba(55, 0, 255, 0.6) 110%
+    );
+    border-radius: 22px;
+    transition: all 0.3s;
+}
+
+.contenedor2 {
+    border-radius: 0;
+    transition: all 0.2s;
+}
+
+.contenedor2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.contenedor1:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+}
+
+.inicio {
     text-align: center;
-    animation: aparecer 1s ease-in-out;
+    margin: 2em;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
 }
 
-.contenedor1 h1 {
-    margin-bottom: 20px;
-    color: #1a5f9a;
-}
-
-.contenedor1 label {
-    display: block;
-    text-align: left;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #1a5f9a;
-}
-
-.contenedor1 input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    outline: none;
-    transition: border 0.3s;
-}
-
-.contenedor1 input:focus {
-    border: 1px solid #5099da;
-}
-
-.contenedor1 button {
-    width: 100%;
-    padding: 12px;
-    background: linear-gradient(135deg, #4facfe, #00c6ff);
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 25px;
+    padding: 0.6em;
     border: none;
-    border-radius: 10px;
+    outline: none;
     color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: rgba(0, 0, 0, 0.45);
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
 }
 
-.contenedor1 button:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 20px #3988ce99;
+.input-icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: white;
 }
 
-.contenedor1 a {
-    text-decoration: none;
+.input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+}
+
+.form .btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2.5em;
+}
+
+.button1 {
+    padding: 0.5em;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    border: none;
+    outline: none;
+    transition: 0.4s ease-in-out;
+    background-color: rgba(37, 37, 37, 0.6);
+    color: white;
+}
+
+.button1:hover {
+    background-color: #21756a;
+    color: white;
+}
+
+.button2 {
+    padding: 0.5em;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: 0.4s ease-in-out;
+    background-color: rgba(37, 37, 37, 0.6);
+    color: white;
+}
+
+.button2:hover {
+    background-color: #21756a;
+    color: white;
+}
+
+.button3 {
+    margin-bottom: 3em;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: 0.4s ease-in-out;
+    background-color: rgba(37, 37, 37, 0.6);
+    color: white;
+}
+
+.button3:hover {
+    background-color: red;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .navbar {
+        height: 60px;
+        padding: 0 20px;
+    }
+
+    .navbar h2 {
+        font-size: 22px;
+    }
+
+    .contenedor1 {
+        width: 90%;
+    }
+
+    .form {
+        padding: 1.5em;
+    }
+
+    .inicio {
+        font-size: 1.1em;
+        margin: 1.5em;
+    }
+
+    .form .btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button1,
+    .button2,
+    .button3 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .navbar {
+        height: 55px;
+    }
+
+    .navbar h2 {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .contenedor1 {
+        width: 100%;
+    }
+
+    .form {
+        padding: 1.2em;
+        border-radius: 20px;
+    }
+
+    .inicio {
+        font-size: 1em;
+        margin: 1em;
+    }
+
+    .field {
+        padding: 0.5em;
+    }
+
+    .input-icon {
+        height: 1.1em;
+        width: 1.1em;
+    }
+
+    .button1,
+    .button2,
+    .button3 {
+        font-size: 0.95em;
+        padding: 0.6em;
+    }
 }
