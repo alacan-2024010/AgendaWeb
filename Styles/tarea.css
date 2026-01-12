@@ -10,6 +10,7 @@ body {
     min-height: 100vh;
 }
 
+
 .navbar {
     position: fixed;
     top: 0;
@@ -23,7 +24,6 @@ body {
     padding: 0 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     z-index: 1000;
-    animation: slideDown 0.5s ease-out;
 }
 
 .navbar h2 {
@@ -32,18 +32,14 @@ body {
     font-weight: 600;
     letter-spacing: 1.5px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
 }
 
-.contenedor2 {
-    color: #ffffff;
-    padding: 20px;
-}
 
 .iconosNavBar {
     display: flex;
     align-items: center;
     gap: 30px; 
+    margin-left: auto;
     margin-right: 40px;
 }
 
@@ -61,6 +57,99 @@ a:hover {
     color: #082644;
 }
 
-.tareas {
-    margin-bottom: 15px;
+
+.contenedor {
+    max-width: 600px;
+    margin: 120px auto 40px; 
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.contenedor h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #d0e4f5;
+    background: #f8fbff;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #4ca1af;
+    box-shadow: 0 0 6px rgba(76, 161, 175, 0.4);
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(90deg, #2c3e50, #4ca1af);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+li {
+    background: #f0f9ff;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    color: #2c3e50;
+}
+
+
+li button {
+    width: auto;
+    padding: 8px 14px;
+    font-size: 13px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+/*nth-of-type(1) significa que es el boton 1 osea el de editar*/
+li button:nth-of-type(1) {
+    background: #3498db;
+}
+
+li button:nth-of-type(1):hover {
+    background: #2c80b4;
+}
+
+/*nth-of-type(1) significa que es el boton 1 osea el de eliminar*/
+li button:nth-of-type(2) {
+    background: #e74c3c;
+}
+
+li button:nth-of-type(2):hover {
+    background: #c0392b;
 }
