@@ -10,10 +10,55 @@ body {
     min-height: 100vh;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(90deg, #2c3e50, #4ca1af);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    animation: slideDown 0.5s ease-out;
+}
+
+.navbar h2 {
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
 .contenedor2 {
-    color: #1a5f9a;
+    color: #ffffff;
     padding: 20px;
-    text-align: center;
+}
+
+.iconosNavBar {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+    margin-right: 40px;
+}
+
+a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s, color 0.2s;
+}
+
+a:hover {
+    transform: scale(1.15);
+    color: #082644;
 }
 
 .contactos {
@@ -46,8 +91,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 80px;
-    padding: 0 60px;
-    margin-top: 60px;
+    padding: 0 140px;
+    margin-top: 140px;
 }
 
 .contenedorContactos li {
