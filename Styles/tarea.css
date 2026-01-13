@@ -6,7 +6,11 @@
 }
 
 body {
-    background: linear-gradient(135deg, #e6f7ff, #f0f9ff);
+    background-image: url("../img/FondoContactos.png"); 
+    background-size: cover;     
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
     min-height: 100vh;
 }
 
@@ -99,7 +103,7 @@ button {
     margin-top: 15px;
     border-radius: 10px;
     border: none;
-    background: linear-gradient(90deg, #2c3e50, #4ca1af);
+    background: linear-gradient(135deg, #2e86de, #00b4ff);
     color: white;
     font-size: 15px;
     cursor: pointer;
@@ -131,18 +135,19 @@ li {
 li button {
     width: auto;
     padding: 8px 14px;
-    font-size: 13px;
+    font-size: 16px;
     border-radius: 8px;
     margin-right: 8px;
+    font-weight: bold;
 }
 
 /*nth-of-type(1) significa que es el boton 1 osea el de editar*/
 li button:nth-of-type(1) {
-    background: #3498db;
+    background: #3dfa18;
 }
 
 li button:nth-of-type(1):hover {
-    background: #2c80b4;
+    background: #508b02;
 }
 
 /*nth-of-type(1) significa que es el boton 1 osea el de eliminar*/
