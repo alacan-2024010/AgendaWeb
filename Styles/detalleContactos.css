@@ -105,3 +105,53 @@ form div {
     border-left: 4px solid #4ca1af;
 }
 
+@media (max-width: 600px) {
+    .navbar {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    .iconosNavBar {
+        gap: 18px;
+        margin-right: 10px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    form {
+        margin: 100px auto 20px;
+        padding: 20px;
+        width: 95%;
+    }
+
+    .info {
+        font-size: 15px;
+    }
+
+    .detalle {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    form {
+        max-width: 500px;
+    }
+
+    .navbar h1 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1400px) {
+    form {
+        max-width: 650px;
+    }
+}
