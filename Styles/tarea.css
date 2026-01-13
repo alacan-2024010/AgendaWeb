@@ -158,3 +158,71 @@ li button:nth-of-type(2) {
 li button:nth-of-type(2):hover {
     background: #c0392b;
 }
+
+@media (max-width: 600px) {
+    .navbar {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    .navbar h2 {
+        font-size: 20px;
+    }
+
+    .iconosNavBar {
+        gap: 18px;
+        margin-right: 10px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    .contenedor {
+        margin: 100px 15px 30px;
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    .contenedor h2 {
+        font-size: 20px;
+    }
+
+    input,
+    select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 11px;
+    }
+
+    li {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    li button {
+        font-size: 14px;
+        padding: 7px 12px;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 900px) {
+    .contenedor {
+        max-width: 500px;
+    }
+
+    .navbar h2 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .contenedor {
+        max-width: 650px;
+    }
+}
